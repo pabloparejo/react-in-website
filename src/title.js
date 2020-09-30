@@ -1,12 +1,10 @@
 'use strict';
 
-const e = React.createElement;
-
 class PageTitle extends React.Component {
 
   render() {
 
-    return e(
+    return React.createElement(
       'h1',
       null,
       'Hello from react!!'
@@ -15,4 +13,4 @@ class PageTitle extends React.Component {
 }
 
 const domContainer = document.querySelector('#title-container');
-ReactDOM.render(e(PageTitle), domContainer);
+ReactDOM.render(React.createElement(PageTitle), domContainer);
